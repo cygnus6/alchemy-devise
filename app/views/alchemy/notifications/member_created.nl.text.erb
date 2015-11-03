@@ -1,0 +1,13 @@
+Welkom <%= @user.name %>!
+
+Er is een account voor je aangemaakt.
+
+Je gebruikersnaam is: <%= @user.login %>
+
+Het wachtwoord is automatisch gegenereerd. Om veiligheidsredenen wordt dit wachtwoord hier niet weergegeven.
+
+Volg de volgende link(*) om het wachtwoord te resetten:
+
+<%= alchemy.new_password_url(email: @user.email) %>
+
+*) Als dit niet werkt, kopieer dan de url en plak hem in de adresbalk van de browser.
